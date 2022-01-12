@@ -1,0 +1,70 @@
+8 TCADRACT
+7 PPPPPPPP
+6         
+5         
+4         
+3         
+2 pppppppp
+1 tcadract
+  ABCDEFGH
+
+ ----------------------------------------
+
+8 TCADRACT
+7 PPPPPPPP
+6         
+5         
+4         
+3    p    
+2 ppp pppp
+1 tcadract
+  ABCDEFGH
+
+ ----------------------------------------
+
+8 TCADRACT
+7 PPPPP PP
+6      P  
+5         
+4         
+3    p    
+2 ppp pppp
+1 tcadract
+  ABCDEFGH
+
+ ----------------------------------------
+
+8 TCADRACT
+7 PPPPP PP
+6      P  
+5         
+4     p   
+3    p    
+2 ppp  ppp
+1 tcadract
+  ABCDEFGH
+
+ ----------------------------------------
+
+8 TCADRACT
+7 PPPPP  P
+6      P  
+5       P 
+4     p   
+3    p    
+2 ppp  ppp
+1 tcadract
+  ABCDEFGH
+
+ ----------------------------------------
+
+8 TCADRACT
+7 PPPPP  P
+6      P  
+5       Pd
+4     p   
+3    p    
+2 ppp  ppp
+1 tca ract
+  ABCDEFGH
+
