@@ -63,6 +63,29 @@ void Replay::setting(string nome_file) {
 	//apertura flusso
 	out.open("replay.txt");
 
+	//print();
+
+	//ora stampiamo la scacchiera a schermo
+	for (int riga = 7; riga >= 0; riga--) {
+		cout << (riga + 1) << " ";
+		for (int colonna = 0; colonna < 8; colonna++) {
+			cout << replay[riga][colonna];
+		}
+		cout << endl;
+	}
+	cout << "  " << "ABCDEFGH" << endl << endl;
+
+	//stampa su file
+	for (int riga = 7; riga >= 0; riga--) {   //stampa su file 
+		out << (riga + 1) << " ";
+		for (int colonna = 0; colonna < 8; colonna++) {
+			out << replay[riga][colonna];
+		}
+		out << endl;
+	}
+	out << "  " << "ABCDEFGH" << endl << endl;
+
+
 
 	if (file.is_open()) {
 
@@ -139,6 +162,8 @@ void Replay::setting(string nome_file) {
 			replay[dati[1]][dati[0]] = ' ';
 
 
+
+			//print();
 			
 			//ora stampiamo la scacchiera a schermo
 			for (int riga = 7; riga >= 0; riga--) {   
@@ -159,7 +184,7 @@ void Replay::setting(string nome_file) {
 				out << endl;
 			}
 			out << "  " << "ABCDEFGH" << endl << endl;
-
+			
 
 
 
@@ -187,6 +212,8 @@ void Replay::setting(string nome_file) {
 }
 
 void Replay::print() {
+
+
 	for (int riga = 7; riga >= 0; riga--) {
 		cout << (riga + 1) << " ";
 		for (int colonna = 0; colonna < 8; colonna++) {
@@ -196,16 +223,15 @@ void Replay::print() {
 	}
 	cout << "  " << "ABCDEFGH" << endl << endl;
 
+	out.open("replay.txt");
 
-	ofstream fileout("replay.txt", ios::app);
-	for (int riga = 0; riga < 8; riga++) {
-		fileout << (riga + 1) << " ";
+	for (int riga = 7; riga >= 0; riga--) {
+		out << (riga + 1) << " ";
 		for (int colonna = 0; colonna < 8; colonna++) {
-			fileout << replay[riga][colonna];
+			out << replay[riga][colonna];
 		}
-		fileout << endl;
+		out << endl;
 	}
-	fileout << "  " << "ABCDEFGH" << endl << endl;
+	out << "  " << "ABCDEFGH" << endl << endl;
 
-	fileout.close();
 }
