@@ -6,6 +6,9 @@
 #include <string>
 #include "Exception.h"
 
+#include <chrono>
+#include <thread>
+
 
 using namespace std;
 class Replay {
@@ -19,7 +22,9 @@ private:
 
 public:
 	Replay();
-	void setting(string nome_file);
+	void stampaSchermo(string nome_file);
+	void stampaSuFile(string nome_file_log, string file_output);
+
 	void print();
 
 	~Replay() {}
