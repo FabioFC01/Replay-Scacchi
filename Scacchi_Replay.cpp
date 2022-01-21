@@ -43,7 +43,12 @@ int main(int argc, char* argv[]) {
 	}
 
 	else {
-		rep.stampaSchermo("Test.txt");
+		try {
+			rep.stampaSchermo("Test.txt");
+		}
+		catch (Exception& e) {
+			cout << e.what() << endl;
+		}
 
 	}
 

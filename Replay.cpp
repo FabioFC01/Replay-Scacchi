@@ -47,13 +47,15 @@ Replay::Replay() {
 
 void Replay::stampaSuFile(string nome_file_log, string file_output) {
 	//flusso d'ingresso
-	ifstream file(nome_file_log);
+	ifstream file;
+	file.open(nome_file_log, std::ifstream::in);
 
-	/*
-	if (!file.is_open()) {
-		throw new Exception("Il file non può essere aperto");
+	//se ci sono problemi lancia l'eccezione
+	if (!file.good()) {
+		throw Exception("Problemi con l'apertura del flusso ifstream");
 	}
-	*/
+
+	
 
 	char temp;
 	string line;
@@ -177,13 +179,14 @@ void Replay::stampaSuFile(string nome_file_log, string file_output) {
 void Replay::stampaSchermo(string nome_file) {
 
 	//flusso d'ingresso
-	ifstream file(nome_file);
+	ifstream file;
+	file.open(nome_file, std::ifstream::in);
 
-	/*
-	if (!file.is_open()) {
-		throw new Exception("Il file non può essere aperto");
+	//se ci sono problemi lancia l'eccezione
+	if (!file.good()) {
+		throw Exception("Problemi con l'apertura del flusso ifstream");
 	}
-	*/
+	
 
 	char temp;
 	string line;
